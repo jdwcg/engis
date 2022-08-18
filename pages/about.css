@@ -49,7 +49,7 @@
 .circle_03 { background: #D8B4FE !important; }
 .circle_03:before { content: ''; position: absolute; z-index: -1; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background: white; border: 3px solid #D8B4FE !important; width: 190px; height: 190px; border-radius: 50%; opacity: .5; }
 
-.history { background: #F3F4F6; position: relative; }
+.history { background: #f8f8f8; position: relative; }
 @media (max-width: 480px) { .history { width: 100%; padding: 0 2rem; } }
 .history .row01 { text-align: center; padding: 4rem 0 0; position: relative; z-index: 20; }
 @media (max-width: 480px) { .history .row01 { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }

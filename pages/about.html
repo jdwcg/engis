@@ -211,16 +211,16 @@
 <div class="footer"></div>
 <script type="text/javascript">
 $(document).ready(function(){
-  $(".more_list").slice(0, 4).show();
+  $(".more_list").slice(0, 3).show();
   $("#loadMore").on("click", function(e){
     e.preventDefault();
-    $(".more_list:hidden").slice(0, 1).slideDown();
+    $(".more_list:hidden").slice(0, 10).slideDown();
     if($(".more_list:hidden").length == 0) {
       $("#loadMore").text("").addClass("noContent");
     }
-    $('html,body').animate({
-        scrollTop: $(this).offset().top
-    }, 300);
+    // $('html,body').animate({
+    //     scrollTop: $(this).offset().top
+    // }, 300);
   });
 })
 
