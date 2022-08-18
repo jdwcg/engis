@@ -59,7 +59,7 @@
 @media (min-width: 1925px) { .carousel .txt_box { left: 40%; } }
 @media (max-width: 480px) { .carousel .txt_box { text-align: center; left: 50%; } }
 .carousel .txt_box > .quote { word-break: keep-all; font-size: 4rem; color: white; margin: 0; line-height: 1; position: absolute; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
-@media (max-width: 480px) { .carousel .txt_box > .quote { font-size: 2rem; } }
+@media (max-width: 480px) { .carousel .txt_box > .quote { font-size: 2rem; padding-top: 0; top: 50px; } }
 .carousel .txt_box2 { position: absolute; left: 70%; top: 55%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 500; opacity: 0; -webkit-transition: .3s; transition: .3s; -webkit-transition: all 1s ease; transition: all 1s ease; -webkit-transition-delay: .7s; transition-delay: .7s; -webkit-transform: translateY(0px); transform: translateY(0px); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; text-align-last: left; width: 100%; }
 @media (min-width: 1925px) { .carousel .txt_box2 { left: 60%; } }
 @media (max-width: 480px) { .carousel .txt_box2 { left: 50%; } }

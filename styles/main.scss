@@ -228,8 +228,14 @@
          font-size: 4rem; color: white; margin: 0;
          line-height: 1;
          position: absolute; transform: translateX(-50%);
+
+         span {
+            @media(max-width:480px) {}
+         }
          @media(max-width:480px) {
             font-size: 2rem;
+            padding-top: 0;
+            top: 50px;
          }
       }
    }
