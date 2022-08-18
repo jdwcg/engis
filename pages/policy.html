@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>EnGIS</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="../lib/form/form.css">
+<link rel="stylesheet" href="../styles/common.css">
+<link rel="stylesheet" href="./about.css">
+</head>
+<body>
+
+<div class="contain content1">
+   <div class="navbar "></div>
+</div>
+<nav class="navbg"></nav>
+
+<div class="sub_bar"></div>
+
+
+<div class="contain location_wrap_1">
+   <div class="location_txt_1"><span>개인정보처리방침</span></div>
+</div>
+
+<style>
+   @media(max-width:480px) {
+      .policy_wrap {
+         padding: 1.5rem;
+      }
+   }
+</style>
+<div class="contain policy_wrap">
+   <h1 style=" font-size:20px;font-weight:600">개인정보처리방침</h1>
+   <div>
+      <h2 style="font-size: 16px; font-weight: 600">
+         뛰노는 오직 사는가 얼마
+      </h2>
+      <p >
+         수 얼음이 봄바람을 어디 평화스러운 예수는 고동을 석가는 아니다. 청춘은 대한 이상의 있으랴? 원질이 되는 온갖 이 예수는 그러므로 약동하다. 구하지 꽃이 곳이 우리 인류의 있으랴? 인생을 피가 평화스러운 밥을 위하여 인간의 자신과 스며들어 교향악이다. 몸이 관현악이며, 꾸며 살 것은 그들은 그들을 쓸쓸하랴? 바이며, 소금이라 가는 같지 끓는 눈에 피어나는 것이다. 할지니, 이상의 뛰노는 오직 사는가 얼마나 힘있다. 긴지라 방황하였으며, 인생을 봄날의 길을 착목한는 없으면, 때문이다.
+
+      </p>
+      <h2 style="font-size: 16px; font-weight: 600">
+         뛰노는 오직 사는가 얼마
+      </h2>
+      <ul >
+         <li style="list-style-type: square;; margin-left: 20px;"> 고동을 석가는 아니다. 청춘은 대한 이상의</li>
+         <li style="list-style-type: square;; margin-left: 20px;"> 고동을 석가는 아니다. 청춘은 대한 이상의</li>
+         <li style="list-style-type: square;; margin-left: 20px;"> 고동을 석가는 아니다. 청춘은 대한 이상의</li>
+      </ul>
+   </div>
+</div>
+
+
+<div class="footer"></div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".more_list").slice(0, 4).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".more_list:hidden").slice(0, 1).slideDown();
+    if($(".more_list:hidden").length == 0) {
+      $("#loadMore").text("").addClass("noContent");
+    }
+    $('html,body').animate({
+        scrollTop: $(this).offset().top
+    }, 300);
+  });
+})
+
+
+</script>
+<script src="../lib/form/script.js"></script>
+<script>
+ $(document).ready(function() {
+   $.ajax({
+     url : "../components/navbar.html",
+     success : function(result) {
+         $(".navbar").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/footer.html",
+     success : function(result) {
+         $(".footer").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/sub_bar.html",
+     success : function(result) {
+         $(".sub_bar").html(result);
+     },
+   });
+ });
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

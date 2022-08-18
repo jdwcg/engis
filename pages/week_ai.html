@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>EnGIS</title>
+<link rel="stylesheet" href="../styles/common.css">
+<!-- <link rel="stylesheet" href="../lib/form/form.css"> -->
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="contain content1">
+   <div class="navbar "></div>
+</div>
+<nav class="navbg"></nav>
+
+<div class="sub_bar"></div>
+
+
+<div class="contain location_wrap_1">
+   <div class="location_txt_1">홈 > 솔루션 > <span>주간 A.I. 트렌드 리포트</span></div>
+</div>
+<div class="contain">
+   <section class="row solution">
+      <div class="col tab_wrap">
+         <!-- 인라인 -->
+         <div class="tab_btn" >
+            <p><a href="./solution.html">미세먼지 예측 조회</a></p>
+            <p><span class="material-icons" >air</span></p>
+         </div>
+         <div class="tab_btn">
+            <p><a href="./seoul_land.html">서울 랜드마크 분류</a></p>
+            <p><span class="material-icons">landscape</span></p>
+         </div>
+         <div class="tab_btn">
+            <p><a href="./crop_service.html">작물 질병 진단 서비스</a></p>
+            <p><span class="material-icons">local_florist</span></p>
+         </div>
+         <div class="tab_btn" style="border-left: 6px solid #84CC16;">
+            <p><a href="./week_ai.html">주간 A.I. 트렌드 리포트</a></p>
+            <p><span class="material-icons" style="color:#84CC16">timeline</span></p>
+         </div>
+      </div>
+
+      <div class="tab_1_desc">
+         <div class='view_1_heading'>
+            <div class="view_1_title">
+               <h1>주간 A.I. 트렌드 리포트</h1>
+            </div>
+            <hr>
+            <p>
+               피어나는 어디 발휘하기 이상, 그들은 두손을 철환하였는가? 이상은 같이, 있을 이것이다. 있을 주는 보내는 설산에서 목숨이 예가 풀밭에 청춘의 위하여서. 품고 이 청춘의 열매를 오직 하여도 같으며, 이것이다. 위하여 피고 기쁘며, 못할 밥을 때까지 사막이다. 영원히 위하여서, 미인을 것이다.
+            </p>
+         </div>
+      </div>
+
+   </section>
+</div>
+
+<div class="footer"></div>
+
+<script>
+ $(document).ready(function() {
+   $.ajax({
+     url : "../components/navbar.html",
+     success : function(result) {
+         $(".navbar").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/footer.html",
+     success : function(result) {
+         $(".footer").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/sub_bar.html",
+     success : function(result) {
+         $(".sub_bar").html(result);
+     },
+   });
+ });
+</script>
+</body>
+</html>

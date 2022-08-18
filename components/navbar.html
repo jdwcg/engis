@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>navbar</title>
+<link rel="stylesheet" href="./styles/common.css">
+</head>
+<body>
+   <div class="mobile_nav">
+      <span class="material-icons open" onclick="menuSlide()">menu</span>
+      <script>
+         function menuSlide() {
+            let menuSlide = document.querySelector('.mobile_nav');
+            let mobileLnb = document.querySelector('.mobile_lnb');
+            let mobileDarkBg = document.querySelector('.mobile_dark_bg');
+            mobileLnb.style.right = '0';
+            mobileDarkBg.style.display = 'block';
+         }
+      </script>
+      <div class="mobile_lnb">
+         <span class="material-icons close" onclick="menuClose()">close</span>
+         <script>
+            function menuClose() {
+               let mobileLnb = document.querySelector('.mobile_lnb');
+               let mobileDarkBg = document.querySelector('.mobile_dark_bg');
+               mobileLnb.style.right = '-280px';
+               mobileDarkBg.style.display = 'none';
+            }
+         </script>
+         <ul class="mobile_lnb_list">
+            <li><a href="../pages/business.html">사업분야</a></li>
+            <li class="mobile_lnb_list_detail">
+               <a href="../pages/solution.html">솔루션</a>
+               <span class="material-icons mobile_lnb_list_detail_add">add</span>
+               <ul class="mobile_lnb_lnb">
+                  <li><a href="../pages/solution.html">미세먼지 예측 조회</a></li>
+                  <li><a href="../pages/seoul_land.html">서울 랜드마크 분류</a></li>
+                  <li><a href="../pages/crop_service.html">작물 질병 진단 서비스</a></li>
+                  <li><a href="../pages/week_ai.html">주간 A.I 트렌드 리포트</a></li>
+               </ul>
+            </li>
+            <li><a href="../pages/about.html">기업소개</a></li>
+            <li><a href="../pages/contact.html">연락처</a></li>
+         </ul>
+      </div>
+      <div class="mobile_dark_bg" onclick="menuClose()" ></div>
+   </div>
+
+<nav class="nav ">
+   <div class="row ">
+      <div class="col logo">
+         <a href="../index.html">
+            <img class="logo_white" src="../img/logo_black.png" alt="LOGO">
+            <img class="logo_black" src="../img/logo_white.png" alt="LOGO">
+         </a>
+      </div>
+
+      <div class="col lnb_wrap">
+         <ul>
+            <li class="nav_txt">
+               <a href="../pages/solution.html">솔루션</a>
+               <a href="../pages/business.html">사업분야</a>
+               <a href="../pages/about.html">기업소개</a>
+               <a href="../pages/contact.html">연락처</a>
+            </li>
+         </ul>
+   </div>
+</nav>
+<nav class="navbg"></nav>
+
+<script type="text/javascript">
+
+
+   let lnbPlusBtn = document.querySelector('.mobile_lnb_list_detail_add');
+   let lnbDetail = document.querySelector('.mobile_lnb_lnb');
+   let newHeight = lnbDetail.scrollHeight;
+   lnbDetail.style.maxHeight = null;
+   lnbDetail.style.padding = 0;
+   lnbPlusBtn.addEventListener('click', function(){
+      if(lnbDetail.style.maxHeight == 0)  {
+         lnbPlusBtn.style.transform = "rotate(" + 45 + "deg)";
+         lnbDetail.style.maxHeight = newHeight+'px';
+         lnbDetail.style.padding = '1rem 0';
+      } else {
+         lnbPlusBtn.style.transform = "rotate(" + -90 + "deg)";
+         lnbDetail.style.maxHeight = null;
+         lnbDetail.style.padding = 0;
+      }
+   })
+
+</script>
+
+<script type="text/javascript">
+
+let lnb = document.querySelector('.lnb');
+let nav = document.querySelector('.nav');
+let lnbWrap = document.querySelector('.lnb_wrap');
+
+$(function(){
+   $('.lnb_wrap').hover(function(){
+      $('.lnb').stop().slideToggle()
+   })
+})
+
+</script>
+<script>
+let box = document.querySelector('.navbg');
+let txtColor = document.querySelectorAll('.nav_txt a')
+let logoWhite = document.querySelector('.logo_white');
+let logoBlack = document.querySelector('.logo_black');
+
+let mobileNav = document.querySelector('.mobile_nav span')
+
+logoBlack.style.display = "none";
+
+window.addEventListener('scroll', ()=>{
+  let yOffset = window.pageYOffset;
+  if( yOffset > 10) {
+    logoWhite.style.display = "none";
+    logoBlack.style.display = "block";
+    box.style.background = '#0f172a';
+    for(let i = 0; i < txtColor.length; i++) {
+      txtColor[i].style.color = "white";
+   }
+
+   mobileNav.style.color = 'white';
+
+   } else if( yOffset < 10000) {
+      mobileNav.style.color = '#0f172a';
+
+      logoWhite.style.display = "block";
+      logoBlack.style.display = "none";
+       box.style.background = 'transparent';
+       for(let i = 0; i < txtColor.length; i++) {
+         txtColor[i].style.color = "#0f172a";
+      }
+     }
+})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>EnGIS</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="../lib/form/form.css">
+<link rel="stylesheet" href="../styles/common.css">
+<link rel="stylesheet" href="./business_section.css">
+</head>
+<body>
+
+<div class="contain content1">
+   <div class="navbar "></div>
+</div>
+<nav class="navbg"></nav>
+
+<div class="sub_bar"></div>
+
+<div class="contain location_wrap_1">
+   <div class="location_txt_1">홈 > <span>사업분야</span></div>
+</div>
+
+<div class="contain business_section">
+
+   <div class="business_multiply">
+      <img src="../img/business_multiply.png" alt="business_multiply">
+   </div>
+
+   <div class="row01">
+      <div class="col feild_01_desc" data-aos="fade-up" data-aos-duration="1800">
+         <div class="heading"><p>데이터베이스 분석, 설계, 구축 및<br />GIS 기반 서비스 개발</p></div>
+         <div class="desc">
+            <ul>
+               <li>공간분석 및 가시화를 위한 공간정보 DB 구축</li>
+               <li>2GIS 시스템을 이용한 공간정보 분석 기법 및 알고리즘 개발</li>
+               <li>3GIS 기반 정보시스템 개발</li>
+            </ul>
+
+</div>
+         <div class="heading_btn">
+            <p>해양탄소정보관리시스템<br />(KOCIMS)</p>
+            <p><span class="material-icons">arrow_forward</span></p>
+         </div>
+      </div>
+      <div class="col fild_01_img_wrap" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="300">
+         <div class="fild_01_img"><img src="../img/carbon_info.jpg" alt="img"></div>
+      </div>
+   </div>
+
+   <div class="row02">
+      <div class="col feild_01_desc" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="600">
+         <div class="heading"><p>해양/수산 분야<br />정보 관리 시스템 개발</p></div>
+         <div class="desc">
+            <ul>
+               <li>해양/수산 분야의 정보시스템 구축 </li>
+               <li>데이터베이스 구축 및 품질관리 체계 개발</li>
+               <li>외부시스템 정보연계체계 구축</li>
+            </ul>
+         </div>
+         <div class="heading_btn">
+            <p>WESTPAC Portal Site</p>
+            <p><span class="material-icons">arrow_back</span></p>
+         </div>
+      </div>
+      <div class="col fild_01_img_wrap" data-aos="fade-up" data-aos-duration="1800" data-aos-delay="900">
+         <div class="fild_01_img"><img src="../img/mosazoZR5q.png" alt="img"></div>
+         <div class="fild_01_img"><img src="../img/mosaibAsi2.png" alt="img"></div>
+      </div>
+   </div>
+
+
+   <div class="row03">
+      <div class="col feild_01_desc" data-aos="fade-up" data-aos-duration="1800">
+         <div class="heading"><p>정보 관리 서비스 <br />기획 및 컨설팅</p></div>
+         <div class="desc">
+            <ul>
+               <li>정보서비스 기획 및 서비스 개발</li>
+               <li>2ISP / BPR 컨설팅</li>
+            </ul>
+         </div>
+         <!-- <div class="heading_btn">
+            <p>해양탄소정보관리시스템<br />(KOCIMS)</p>
+            <p><span class="material-icons">arrow_forward</span></p>
+         </div> -->
+      </div>
+      <div class="col fild_01_img_wrap" data-aos="fade-up" data-aos-duration="600">
+         <div class="fild_01_img"><img src="../img/sea_info.jpg" alt="img"></div>
+      </div>
+   </div>
+
+
+</div>
+
+<div class="footer"></div>
+
+<script src="../lib/form/script.js"></script>
+<script>
+ $(document).ready(function() {
+   $.ajax({
+     url : "../components/navbar.html",
+     success : function(result) {
+         $(".navbar").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/footer.html",
+     success : function(result) {
+         $(".footer").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/sub_bar.html",
+     success : function(result) {
+         $(".sub_bar").html(result);
+     },
+   });
+ });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

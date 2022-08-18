@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>navbar</title>
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../lib/form/form.css">
+</head>
+<body>
+<div class="scroll_top_btn" onclick="scrollBtn()">
+   <span class="material-icons" >arrow_upward</span>
+
+</div>
+<div class="foot_top_bar">
+   <div class="contain">
+      <div class="foot_top_bar_inner">
+         <p><a href="../pages/policy.html">개인정보처리방침</a></p>
+         <p>|</p>
+         <p><a style="color: #aaa;" href="javascript:void(0)" onclick="alert('내용 내용 내용')">이메일무단수집거부</a></p>
+      </div>
+   </div>
+</div>
+<div class="footer_inner">
+   <div class="row footer_logo" ><img src="../img/logo_white.png" alt="LOGO"></div>
+   <ul class="row footer_info_name">
+      <li>Adress</li>
+      <li>Contact</li>
+   </ul>
+   <ul class="row co_info">
+      <li>서울특별시 금천구 가산디지털1로 225 에이스 가산포휴(지식산업센터), 1001호</li>
+      <li class="co_info_num">
+         <span class="material-icons">call</span>&nbsp 02-597-3615 &nbsp<span class="material-icons">fax</span>&nbsp 02-597-3616 &nbsp<span class="material-icons">mail</span>&nbsp engis@en-gis.com
+      </li>
+      <li class="copy_right">
+         (주)엔지스 COPYRIGHT © ENGIS. ALL RIGHTS RESERVED.
+      </li>
+   </ul>
+</div>
+
+<script>
+function scrollBtn() {
+   let scrollTopBtn = document.querySelector('.scroll_top_btn');
+   window.scrollTo({top: 0,  behavior: 'smooth'});
+}
+
+</script>
+</body>
+</html>

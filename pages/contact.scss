@@ -1,0 +1,103 @@
+.contact {
+   width: 895px;
+   @media(max-width:480px) {
+      width: 80%;
+   }
+   padding: 3rem 0;
+   > .row {
+      display: flex;
+      justify-content: space-between;
+      @media(max-width:480px) {
+         flex-direction: column;
+      }
+      .location_img {
+         width: 548px;
+         @media(max-width:480px) {
+            width: 100%;
+         }
+         margin-bottom: 2rem;
+      }
+      .col {
+         .co_info_bar {
+            margin-bottom: 14px;
+            width: 280px;
+            @media(max-width: 480px) {
+               width: 240px;
+            }
+            padding: 0 1rem;
+            border-left: 4px solid #BEF264;
+            .title {
+               font-size: 14px;
+               font-weight: 600;
+            }
+         }
+      }
+   }
+}
+.co_info_bar_2 {
+   margin-bottom: 14px;
+   width: 280px;
+   height: 25px;
+   @media(max-width: 480px) {
+      width: 240px;
+   }
+   padding: 0 1rem;
+   border-left: 4px solid #BEF264;
+   .title {
+      font-size: 14px;
+      font-weight: 600;
+   }
+}
+
+.form_wrap {
+   background: #E5E7EB;
+   width: 548px;
+   padding: 2rem;
+   @media(max-width: 480px) {
+      width: 100%;
+      padding: 1rem;
+   }
+   textarea {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 1rem; font-weight: 600;
+      &::placeholder  {
+         color: var(--main_color_light);
+         letter-spacing: -1px; font-weight: 300;
+         font-family: 'noto sans kr';
+         font-size: 1rem;
+      }
+   }
+}
+.form_wrap_inner {
+   display: flex;
+   @media(max-width: 480px) {
+      flex-direction: column;
+   }
+   .input_wrap {
+      padding-right: 1rem;
+   }
+}
+.add_file {
+   padding: 10px 0;
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+   button {
+      height: 30px;
+      span {
+         font-size: 1rem;
+      }
+   }
+}
+
+.send_btn_wrap {
+   width: 100%;
+   margin: 2rem 0 0 ;
+   display: flex; justify-content: flex-end;
+   .send_btn {
+
+   }
+}

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>EnGIS</title>
+
+<link rel="stylesheet" href="./styles/common.css">
+<link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+   <div class="mainContain">
+      <div class="side_dot_menu">
+         <ul>
+            <li class="btnScroll"><a href="javascript:void(0)">Main <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+            <li class="btnScroll"><a href="javascript:void(0)">NGIS <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+            <li class="btnScroll"><a href="javascript:void(0)">Partners <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+         </ul>
+      </div>
+   </div>
+   <div class="contain content1">
+      <div class="navbar "></div>
+   </div>
+<style>
+
+.scroll_down {
+   position: absolute; z-index: 1;
+   bottom: 14rem; color: white;
+   text-align: center;
+   left: 50%; transform: translateX(-50%);
+   animation-name: fade;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+    animation-fill-mode: none;
+    animation-delay: .3s;
+	animation-fill-mode:forwards;
+	}
+@keyframes fade {
+    from {
+       opacity:0;
+    }
+    to {
+       margin-bottom : 10px;
+       opacity:1;
+    }
+}
+@media(max-width: 1100px) {.scroll_down{display: none}}
+</style>
+
+<div class="slide_wrapper">
+   <section class="lazy slider" data-sizes="50vw">
+      <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">Crop Disease <br>Diagnosis service</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             작물질병진단 서비스<br />
+             <span>간단한 설명글</span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/crop_01.png" alt="crop_01">
+        <img class="img_02" src="./img/crop_02.png" alt="crop_02">
+     </div>
+
+     <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">Classification of <br>Seoul Landmarks</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             서울 랜드마크 분류<br />
+             <span>간단한 설명글</span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/landmark_01.png" alt="landmark_01">
+        <img class="img_02" src="./img/landmark_02.png" alt="landmark_02">
+     </div>
+     <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">Fine dust <br />forecast check</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             미세먼지 예측 조회 <br />
+             <span>간단한 설명글</span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/finedust_01.png" alt="finedust_01">
+        <img class="img_02" src="./img/finedust_02.png" alt="finedust_02">
+     </div>
+
+     <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">A.I. Weekly <br>Trends Report</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             주간 A.I. 트렌드 리포트 <br />
+             <span>간단한 설명글</span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/trend_01.png" alt="trend_01">
+        <img class="img_02" src="./img/trend_02.png" alt="trend_02">
+     </div>
+   </section>
+</div>
+
+<section class="contain ngis content1" >
+   <div class="title ">
+      <p >"Make GIS Easy <br> &<br> Necessary"</p>
+   </div>
+   <div class="ngis">
+
+      <div class="ngis_sec">
+         <style>
+            .squiggle1 { stroke-dasharray: 450; stroke-dashoffset: 450; }
+            @keyframes draw1 { to { stroke-dashoffset: 0; } }
+            .squiggle2 { stroke-dasharray: 350; stroke-dashoffset: 350; }
+            @keyframes draw2 { to { stroke-dashoffset: 0; } }
+            .squiggle3 { stroke-dasharray: 500; stroke-dashoffset: 500; }
+            @keyframes draw3 { to { stroke-dashoffset: 0; } }
+         </style>
+         <svg width="71" height="68" viewBox="0 0 71 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-width="1.3" class="squiggle1" d="M14.8453 22.0737C14.8453 26.0472 18.0591 29.2317 22.0033 29.2317H32.492M26.3566 54.6501H40.322M0.5 54.6501H11.427M52.2131 54.6501H66.3247M45.7271 14.9157H22.0325C18.0591 14.9157 14.8745 11.7019 14.8745 7.75764C14.8745 3.7842 18.0883 0.599609 22.0325 0.599609H48.0936C52.0671 0.599609 55.2517 3.81342 55.2517 7.75764C55.2517 11.7311 52.0378 14.9157 48.0936 14.9157C52.0671 14.9157 55.2517 18.1295 55.2517 22.0737C55.2517 26.0472 52.0378 29.2317 48.0936 29.2317L35.0631 29.2025V40.8891H9.20651V47.3167H0.5V66.5996H17.8838V47.3167H26.3566V66.5996H43.7404V47.3167H38.0724V40.8891H60.8904V47.3167H52.1839V66.5996H69.5969V47.3167H63.0232M24.1361 7.72854C24.1361 8.77737 23.2859 9.62761 22.2371 9.62761C21.1882 9.62761 20.338 8.77737 20.338 7.72854C20.338 6.67971 21.1882 5.82947 22.2371 5.82947C23.2859 5.82947 24.1361 6.67971 24.1361 7.72854ZM30.0671 7.72854C30.0671 8.77737 29.2168 9.62761 28.168 9.62761C27.1192 9.62761 26.2689 8.77737 26.2689 7.72854C26.2689 6.67971 27.1192 5.82947 28.168 5.82947C29.2168 5.82947 30.0671 6.67971 30.0671 7.72854ZM24.1361 22.0737C24.1361 23.1225 23.2859 23.9728 22.2371 23.9728C21.1882 23.9728 20.338 23.1225 20.338 22.0737C20.338 21.0249 21.1882 20.1746 22.2371 20.1746C23.2859 20.1746 24.1361 21.0249 24.1361 22.0737ZM30.0671 22.0737C30.0671 23.1225 29.2168 23.9728 28.168 23.9728C27.1192 23.9728 26.2689 23.1225 26.2689 22.0737C26.2689 21.0249 27.1192 20.1746 28.168 20.1746C29.2168 20.1746 30.0671 21.0249 30.0671 22.0737Z" stroke="#818cf8" stroke-miterlimit="10"/>
+         </svg>
+
+         <h1>"A.I MODELING, 공공 분야 DB/정보시스템 구축 <br> 및 GIS 기반 공간정보 서비스 개발"</h1>
+         <p>
+            ㈜ 엔지스는 2013년 2월 설립되어 공간정보 서비스, 시스템 통합, 컨설팅 영역을 주 사업 분야로 공공 분야 DB/정보시스템 구축 및 GIS 기반 공간정보 서비스 개발 등을 진행하고 있으며 국립환경과학원을 비롯한 공공기관의 환경 분야 시스템 구축 및 컨설팅 사업을 수행하고 있습니다.
+         </p>
+      </div>
+      <div class="ngis_sec">
+         <svg width="66" height="67" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-width="1.4" class="squiggle2" d="M42.3198 27.7205H56.4845L59.3119 40.8596M23.9973 28.9956C25.9376 31.9616 28.571 35.2325 32.1191 38.7806C46.5332 24.3664 45.7293 14.1102 45.7293 14.1102C45.7293 6.59828 39.6311 0.5 32.1191 0.5C24.6071 0.5 18.5088 6.59828 18.5088 14.1102C18.5088 14.1102 18.093 19.4047 23.1934 27.7205H9.91581L4.75999 51.8087L20.5878 38.7806L44.8423 61.8708L59.6999 42.7167L64.8003 66.5H1.59998L4.37192 53.5827M37.1918 14.1102C37.1918 16.9117 34.9206 19.1829 32.1191 19.1829C29.3175 19.1829 27.0464 16.9117 27.0464 14.1102C27.0464 11.3086 29.3175 9.03753 32.1191 9.03753C34.9206 9.03753 37.1918 11.3086 37.1918 14.1102Z" stroke="#818cf8" stroke-miterlimit="10"/>
+         </svg>
+
+         <h1>"GIS 전용 컨설팅 및 GIS 분야<br> 최고의 이해도 보유"</h1>
+         <p>
+            경험과 역량을 고루 갖춘 우수한 인재들이 주도하는 안정적인 조직 구조를 가지고 있으며, 특히 대형 SI 프로젝트를 통해 시스템 개발 및 사업 수행 능력을 인정받은 IT 전문가와 환경/해양 분야의 업무전문가를 확보하고 있습니다. 이러한 해당분야 전문 인력과 기술력을 기반으로 최적의 정보기술 서비스를 효과적으로 제공하는 것이 저희 기업의 목적입니다.
+         </p>
+      </div>
+      <div class="ngis_sec">
+         <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-width="1.4" class="squiggle3" d="M24.8236 25.1202C27.0187 22.8658 30.0739 21.442 33.4852 21.442C40.1297 21.442 45.5283 26.8407 45.5283 33.4852C45.5283 40.1297 40.1297 45.5283 33.4852 45.5283C26.8407 45.5283 21.442 40.1297 21.442 33.4852C21.442 31.0528 22.1539 28.7984 23.3998 26.9297L17.9715 22.2726C16.3993 24.4973 15.3018 27.078 14.8272 29.896H10.0811V36.4515H14.8272C15.3018 39.2398 16.3993 41.8204 17.9715 44.0748L14.5899 47.4267L19.247 52.0838L22.5989 48.7022C24.8236 50.2744 27.4043 51.3719 30.2222 51.8465V56.5926H36.7778V51.8465C39.5661 51.3719 42.1467 50.2744 44.4011 48.7022L47.753 52.0542L52.4101 47.3971L49.0582 44.0452C50.6303 41.8205 51.7279 39.2398 52.2025 36.4218H56.9485V29.896H52.2025C51.7279 27.1076 50.6303 24.527 49.0582 22.2726L52.4101 18.9207L47.753 14.2636L44.4011 17.6155C42.1764 16.0434 39.5957 14.9458 36.7778 14.4712V9.72517H30.2222V14.4712C27.4339 14.9755 24.8533 16.073 22.5989 17.6452L19.247 14.2636L12.7805 7.82674C18.4461 3.16966 25.5652 0.5 33.5148 0.5C51.7279 0.5 66.5 15.2721 66.5 33.5148C66.5 51.7575 51.7279 66.5 33.5148 66.5C15.3018 66.5 0.5 51.7279 0.5 33.5148C0.5 23.993 4.53416 15.3908 11.0007 9.36921H4.05955" stroke="#818cf8" stroke-miterlimit="10"/>
+         </svg>
+
+         <h1>"시스템 개발을 넘어 <br> 활용도 제고와 운영지원"</h1>
+         <p>
+            환경 분야 시스템 개발 및 컨설팅 전문업체로써 고객의 요구를 신속하고 정확하게 파악하겠으며, 업무 및 데이터에 대한 이해를 바탕으로 전문기술을 통한 효과적인 사업수행을 보장합니다. 사업자의 관점을 넘어 동반자적 책임의식으로 사업을 성공적으로 완수하겠습니다.
+         </p>
+      </div>
+   </div>
+
+   <script type="text/javascript">
+   let squiggle1 = document.querySelector('.squiggle1');
+   let squiggle2 = document.querySelector('.squiggle2');
+   let squiggle3 = document.querySelector('.squiggle3');
+   const activate = () => {
+
+     let yOffset = window.pageYOffset;
+     if (matchMedia("screen and (min-width: 1024px)").matches) {
+
+         if(yOffset > 600) {
+         squiggle1.style.animation = 'draw1 3s linear forwards';
+         }
+         if(yOffset > 900) {
+            squiggle2.style.animation = 'draw2 3s linear forwards';
+         }
+         if(yOffset > 1200) {
+            squiggle3.style.animation = 'draw3 3s linear forwards';
+         }
+
+      } else {
+         squiggle1.style.animation = 'draw1 3s linear forwards';
+         squiggle2.style.animation = 'draw2 3s linear forwards';
+         squiggle3.style.animation = 'draw3 3s linear forwards';
+      }
+
+   }
+   window.addEventListener('scroll', ()=>{ activate() })
+
+   </script>
+
+</section>
+<div class="partners_bg">
+   <section class="contain  " >
+      <div class="title ">
+         <p class="partners_title">Partners · Clients</p>
+      </div>
+      <style>
+
+      </style>
+      <div class="partners_logo">
+         <div class="logo_wrap"><img src="./img/logos/kiri.png" alt="logo_aaa"></div>
+         <div class="logo_wrap"><img src="./img/logos/logo_hyssb.png" alt="logo_aaa"></div>
+         <div class="logo_wrap"><img src="./img/logos/logo_klstw.png" alt="logo_aaa"></div>
+         <div class="logo_wrap"><img src="./img/logos/logo_ksc.png" alt="logo_aaa"></div>
+         <div class="logo_wrap"><img src="./img/logos/logo_nia.png" alt="logo_aaa"></div>
+         <div class="logo_wrap"><img src="./img/logos/logo_sk_univers.png" alt="logo_aaa"></div>
+
+      </div>
+   </section>
+</div>
+
+<footer class="footer content1"></footer>
+
+<script>
+ $(document).ready(function() {
+   $.ajax({
+     url : "./components/navbar.html",
+     success : function(result) {
+         $(".navbar").html(result);
+     },
+   });
+   $.ajax({
+     url : "./components/footer.html",
+     success : function(result) {
+         $(".footer").html(result);
+     },
+   });
+ });
+</script>
+
+<script>
+let btnScroll = document.querySelectorAll('.btnScroll');
+let content1 = document.querySelectorAll('.content1');
+
+function contSlide(num) {
+   window.scroll({top:content1[num].offsetTop,  behavior: 'smooth'});
+}
+btnScroll.forEach((item, idx) => {
+   item.addEventListener('click', (e)=>{
+      e.preventDefault();
+      contSlide(idx);
+   })
+});
+
+</script>
+
+<script>
+let scrollDown = document.querySelector('.scroll_down')
+
+window.addEventListener('scroll', ()=>{
+  let yOffset = window.pageYOffset;
+  if( yOffset > 10) {
+    scrollDown.style.display = 'none';
+
+   } else if( yOffset < 10000) {
+
+     }
+})
+
+</script>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  $(document).on('ready', function() {
+
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true,
+      dots: true,
+      autoplay: true,
+      speed: 600,
+      fade: true,
+      autoplaySpeed: 3000,
+      pauseOnFocus: false,
+    });
+  });
+</script>
+
+</body>
+</html>

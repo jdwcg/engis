@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>EnGIS</title>
+<link rel="stylesheet" href="../lib/form/form.css">
+<link rel="stylesheet" href="../styles/common.css">
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+
+<div class="contain content1">
+   <div class="navbar "></div>
+</div>
+<nav class="navbg"></nav>
+
+<div class="sub_bar"></div>
+<div class="contain location_wrap_1">
+   <div class="location_txt_1">홈 > <span>연락처</span></div>
+</div>
+<div class="contain contact">
+   <div class="row">
+      <div class="col">
+         <div class="row co_info_bar">
+            <p class="title">대표</p>
+            <p class="subject">노재덕, 정진우</p>
+         </div>
+         <div class="row co_info_bar">
+            <p class="title">주소</p>
+            <p class="subject">서울특별시 금천구 가산디지털1로 225,에이스 가산 포휴(지식산업센터) 1001호</p>
+         </div>
+         <div class="row co_info_bar">
+            <p class="title"><strong>전화</strong> 02-597-3615</p>
+            <p class="title"><strong>팩스</strong> 02-597-3615</p>
+         </div>
+         <div class="row co_info_bar">
+            <p class="title">이메일</p>
+            <p class="subject">engis@en-gis.com</p>
+         </div>
+
+      </div>
+      <div class="col location_img">
+         <a href="https://map.kakao.com/?urlX=473220&urlY=1107135&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank">
+            <img width="100%" height="100%" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=473220&MY=1107135&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" >
+         </a>
+      </div>
+   </div>
+
+
+   <div class="row" style="margin-top: 2rem">
+      <div class="co_info_bar_2">
+         <p class="title">Question</p>
+      </div>
+      <div class="col form_wrap">
+         <div class="col form_wrap_inner">
+            <div class="input_wrap ">
+               <label for='radio0' >
+                  <span class="material-icons" id="radio_off0">radio_button_unchecked</span>
+                  <span class="material-icons" id="radio_on0">radio_button_checked</span>
+                  프로젝트
+               </label>
+               <input type="radio" id="radio0" >
+            </div>
+            <div class="input_wrap ">
+               <label for='radio1' >
+                  <span class="material-icons" id="radio_off1">radio_button_unchecked</span>
+                  <span class="material-icons" id="radio_on1">radio_button_checked</span>
+                  제휴
+               </label>
+               <input type="radio" id="radio1">
+            </div>
+            <div class="input_wrap ">
+               <label for='radio2' >
+                  <span class="material-icons" id="radio_off2">radio_button_unchecked</span>
+                  <span class="material-icons" id="radio_on2">radio_button_checked</span>
+                  채용
+               </label>
+               <input type="radio" id="radio2">
+            </div>
+         </div>
+         <div class="input_wrap">
+            <input class="input_box" type="text" placeholder="제목*">
+         </div>
+         <textarea name="name" rows="8" cols="80" placeholder="내용을 입력하세요*"></textarea>
+         <div class="add_file">
+            <label for="input-file" class="input-file-button">첨부파일</label>
+            <input type="file"  id="input-file">
+               <span class="material-icons">attach_file</span>
+         </div>
+         <style>
+            .input-file-button{
+               position: absolute; z-index: 3;
+              padding: 6px 12px;
+              background-color: var(--main_color);
+              color: white;
+              cursor: pointer;
+            }
+            #input-file {
+               position: absolute;
+               padding: 0 3px;
+            }
+         </style>
+
+         <div class="input_wrap">
+            <input class="input_box" type="text" placeholder="이름*">
+         </div>
+         <div class="input_wrap">
+            <input class="input_box" type="text" placeholder="소속*">
+         </div>
+         <div class="input_wrap">
+            <input class="input_box" type="text" placeholder="연락처*">
+         </div>
+         <div class="input_wrap">
+            <input class="input_box" type="text" placeholder="이메일*">
+         </div>
+         <div class="input_wrap ">
+            <label for='_check0' class="checkbox_wrap">
+               <span class="material-icons check_off">check_box_outline_blank</span>
+               <span class="material-icons check_on">check_box</span>
+               개인정보 수집 및 이용에 동의합니다.
+            </label>
+            <input type="checkbox" id="_check0" >
+         </div>
+         <div class="send_btn_wrap">
+            <button class="btn_color send_btn">
+               보내기
+            </button>
+         </div>
+
+
+      </div>
+
+   </div>
+
+
+
+</div>
+
+<div class="footer"></div>
+
+
+<script src="../lib/form/script.js"></script>
+<script>
+ $(document).ready(function() {
+   $.ajax({
+     url : "../components/navbar.html",
+     success : function(result) {
+         $(".navbar").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/footer.html",
+     success : function(result) {
+         $(".footer").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/sub_bar.html",
+     success : function(result) {
+         $(".sub_bar").html(result);
+     },
+   });
+ });
+</script>
+</body>
+</html>

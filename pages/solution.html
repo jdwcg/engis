@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>EnGIS</title>
+<link rel="stylesheet" href="../styles/common.css">
+<!-- <link rel="stylesheet" href="../lib/form/form.css"> -->
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="contain content1">
+   <div class="navbar "></div>
+</div>
+<nav class="navbg"></nav>
+
+<div class="sub_bar"></div>
+
+
+<div class="contain location_wrap_1">
+   <div class="location_txt_1">홈 > 솔루션 > <span>미세먼지 예측조회</span></div>
+</div>
+<div class="contain">
+   <section class="row solution">
+      <div class="col tab_wrap">
+         <!-- 인라인 -->
+         <div class="tab_btn" style="border-left: 6px solid #84CC16;">
+            <p><a href="./solution.html">미세먼지 예측 조회</a></p>
+            <p><span class="material-icons" style="color:#84CC16">air</span></p>
+         </div>
+         <div class="tab_btn">
+            <p><a href="./seoul_land.html">서울 랜드마크 분류</a></p>
+            <p><span class="material-icons">landscape</span></p>
+         </div>
+         <div class="tab_btn">
+            <p><a href="./crop_service.html">작물 질병 진단 서비스</a></p>
+            <p><span class="material-icons">local_florist</span></p>
+         </div>
+         <div class="tab_btn">
+            <p><a href="./week_ai.html">주간 A.I. 트렌드 리포트</a></p>
+            <p><span class="material-icons">timeline</span></p>
+         </div>
+      </div>
+
+      <div class="tab_1_desc">
+
+         <div class='view_1_heading'>
+            <div class="view_1_title">
+               <h1>미세먼지 예측 조회</h1>
+               <!-- <button class='btn_color'>바로가기 &nbsp <span class="material-icons">navigate_next</span></button> -->
+            </div>
+            <hr>
+            <p>
+               미세먼지AI 서비스는 어제의 미세먼지/초미세먼지 관측값과 예측값 비교차트를 제공합니다.
+            </p>
+            <div class="select_box">
+               <select name="fruites">
+                  <option value="apple" selected>서울</option>
+                  <option value="apple" selected>인천</option>
+                  <option value="apple" selected>강원</option>
+                  <option value="apple" selected>충남</option>
+                  <option value="apple" selected>대전</option>
+                  <option value="apple" selected>충북</option>
+                  <option value="apple" selected>세종</option>
+                  <option value="apple" selected>부산</option>
+                  <option value="apple" selected>울산</option>
+                  <option value="apple" selected>대구</option>
+                  <option value="apple" selected>경북</option>
+                  <option value="apple" selected>경남</option>
+                  <option value="apple" selected>전남</option>
+                  <option value="apple" selected>광주</option>
+                  <option value="apple" selected>전북</option>
+                  <option value="apple" selected>제주</option>
+               </select>
+               <select name="fruites">
+                  <option value="apple" selected>중구</option>
+                  <option value="apple" selected>한강대로</option>
+                  <option value="apple" selected>종로구</option>
+                  <option value="apple" selected>청계천로</option>
+                  <option value="apple" selected>종로</option>
+                  <option value="apple" selected>용산구</option>
+                  <option value="apple" selected>광진구</option>
+                  <option value="apple" selected>성동구</option>
+                  <option value="apple" selected>강변북로</option>
+                  <option value="apple" selected>중랑구</option>
+                  <option value="apple" selected>홍릉도</option>
+                  <option value="apple" selected>정릉로</option>
+                  <option value="apple" selected>도봉구</option>
+                  <option value="apple" selected>은평구</option>
+                  <option value="apple" selected>서대문구</option>
+                  <option value="apple" selected>마포구</option>
+                  <option value="apple" selected>신촌로</option>
+                  <option value="apple" selected>강서구</option>
+                  <option value="apple" selected>공항대로</option>
+                  <option value="apple" selected>구로구</option>
+                  <option value="apple" selected>영등포구</option>
+                  <option value="apple" selected>영등포로</option>
+                  <option value="apple" selected>동작대로 중앙차로</option>
+                  <option value="apple" selected>관악구</option>
+                  <option value="apple" selected>강남구</option>
+                  <option value="apple" selected>서초구</option>
+                  <option value="apple" selected>도산대로</option>
+                  <option value="apple" selected>강남대로</option>
+                  <option value="apple" selected>송파구</option>
+                  <option value="apple" selected>강동구</option>
+                  <option value="apple" selected>천호대로</option>
+               </select>
+            </div>
+         </div>
+         <div class="col tab_view_1">
+            <img src="../img/newplot.png" alt="img">
+         </div>
+      </div>
+
+   </section>
+</div>
+
+<div class="footer"></div>
+
+<script>
+ $(document).ready(function() {
+   $.ajax({
+     url : "../components/navbar.html",
+     success : function(result) {
+         $(".navbar").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/footer.html",
+     success : function(result) {
+         $(".footer").html(result);
+     },
+   });
+   $.ajax({
+     url : "../components/sub_bar.html",
+     success : function(result) {
+         $(".sub_bar").html(result);
+     },
+   });
+ });
+</script>
+</body>
+</html>

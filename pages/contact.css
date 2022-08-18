@@ -1,0 +1,33 @@
+.contact { width: 895px; padding: 3rem 0; }
+@media (max-width: 480px) { .contact { width: 80%; } }
+.contact > .row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+@media (max-width: 480px) { .contact > .row { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+.contact > .row .location_img { width: 548px; margin-bottom: 2rem; }
+@media (max-width: 480px) { .contact > .row .location_img { width: 100%; } }
+.contact > .row .col .co_info_bar { margin-bottom: 14px; width: 280px; padding: 0 1rem; border-left: 4px solid #BEF264; }
+@media (max-width: 480px) { .contact > .row .col .co_info_bar { width: 240px; } }
+.contact > .row .col .co_info_bar .title { font-size: 14px; font-weight: 600; }
+
+.co_info_bar_2 { margin-bottom: 14px; width: 280px; height: 25px; padding: 0 1rem; border-left: 4px solid #BEF264; }
+@media (max-width: 480px) { .co_info_bar_2 { width: 240px; } }
+.co_info_bar_2 .title { font-size: 14px; font-weight: 600; }
+
+.form_wrap { background: #E5E7EB; width: 548px; padding: 2rem; }
+@media (max-width: 480px) { .form_wrap { width: 100%; padding: 1rem; } }
+.form_wrap textarea { width: 100%; border: none; outline: none; padding: 10px; font-size: 1rem; font-weight: 600; }
+.form_wrap textarea::-webkit-input-placeholder { color: var(--main_color_light); letter-spacing: -1px; font-weight: 300; font-family: 'noto sans kr'; font-size: 1rem; }
+.form_wrap textarea:-ms-input-placeholder { color: var(--main_color_light); letter-spacing: -1px; font-weight: 300; font-family: 'noto sans kr'; font-size: 1rem; }
+.form_wrap textarea::-ms-input-placeholder { color: var(--main_color_light); letter-spacing: -1px; font-weight: 300; font-family: 'noto sans kr'; font-size: 1rem; }
+.form_wrap textarea::placeholder { color: var(--main_color_light); letter-spacing: -1px; font-weight: 300; font-family: 'noto sans kr'; font-size: 1rem; }
+
+.form_wrap_inner { display: -webkit-box; display: -ms-flexbox; display: flex; }
+@media (max-width: 480px) { .form_wrap_inner { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; } }
+.form_wrap_inner .input_wrap { padding-right: 1rem; }
+
+.add_file { padding: 10px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 1rem; }
+.add_file button { height: 30px; }
+.add_file button span { font-size: 1rem; }
+
+.send_btn_wrap { width: 100%; margin: 2rem 0 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+/*# sourceMappingURL=contact.css.map */
