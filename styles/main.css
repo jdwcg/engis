@@ -5,16 +5,16 @@
 .ngis { text-align: center; padding: 2rem 0; }
 .ngis .ngis_sec { margin-top: 2rem; padding: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .ngis .ngis_sec h1 { color: #818cf8; font-size: 1.5rem; letter-spacing: -1px; font-weight: 400; }
-@media (max-width: 480px) { .ngis .ngis_sec h1 { width: 100%; padding: 0 1rem; }
+@media (max-width: 480px) { .ngis .ngis_sec h1 { width: 100%; padding: 0 1rem; color: #475569; }
   .ngis .ngis_sec h1 br { display: none; } }
 .ngis .ngis_sec > p { width: 500px; }
-@media (max-width: 480px) { .ngis .ngis_sec > p { width: 100%; padding: 0 1rem; } }
+@media (max-width: 480px) { .ngis .ngis_sec > p { display: none; width: 100%; padding: 0 1rem; } }
 
 .logo_wrap { width: 100px; overflow: hidden; background: transparent; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .logo_wrap img { height: 60%; opacity: .9; mix-blend-mode: multiply; }
 
 .partners_logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 50px 3.2%; padding: 1rem 0; margin: 2rem 0; width: 100%; }
-@media (max-width: 480px) { .partners_logo { padding: 0 2rem; } }
+@media (max-width: 480px) { .partners_logo { padding: 0 2rem; gap: 8px 3.2%; } }
 .partners_logo div { width: 14%; height: 100px; }
 @media (max-width: 480px) { .partners_logo div { width: 31%; } }
 
