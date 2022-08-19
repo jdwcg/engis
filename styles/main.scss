@@ -182,6 +182,7 @@
          display: block;
          position: absolute;
          left: -50%;
+         filter: blur(4px);
       }
    }
    background: transparent;
@@ -230,7 +231,9 @@
          position: absolute; transform: translateX(-50%);
 
          span {
-            @media(max-width:480px) {}
+            @media(max-width:480px) {
+
+            }
          }
          @media(max-width:480px) {
             font-size: 2rem;
@@ -260,16 +263,20 @@
          word-break: keep-all;
          font-size: 2rem; color: black; margin: 0;
          letter-spacing: -1px; font-weight: 100;
+         text-align: center !important;
          position: absolute; transform: translateX(-50%);
          @media(max-width:480px) {
             font-size: 1.4rem; font-weight: 600;
             color: #222;
             padding-top: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
          }
          > span {
             @media(max-width:480px) {
-               position: absolute;
-               left:50%; transform: translateX(-50%);
             }
             br {
                display: inline;
