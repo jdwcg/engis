@@ -181,9 +181,12 @@
       .img_02 {
          display: block;
          position: absolute;
-         left: -50%;
-         filter: blur(3px);
+         left: -110%;
+         filter: blur(1px);
          opacity: .9;
+         @media(max-width: 440px) {left: -125%;}
+         @media(max-width: 375px) {left: -110%;}
+         @media(max-width: 360px) {left: -110%;}
       }
    }
    background: transparent;
@@ -193,7 +196,7 @@
    }
    @media(max-width: 480px) {
       display: flex;
-      height: 55vh;
+      height: 100vh;
       @media(max-width: 480px) {
          height: 100vh;
       }
@@ -203,6 +206,7 @@
       @media(max-width: 480px) {
          height:100vh;
          width: auto;
+         // transform: scale(50%);
       }
    }
    position: relative;
@@ -239,7 +243,7 @@
          @media(max-width:480px) {
             font-size: 2rem;
             padding-top: 0;
-            top: 50px;
+            top: 40px;
          }
       }
    }
