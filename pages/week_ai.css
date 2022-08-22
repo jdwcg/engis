@@ -1,0 +1,9 @@
+.week_ai_wrap .week_ai h2 { font-size: 1.3rem; color: var(--main_color_dark); }
+.week_ai_wrap .week_ai .col { padding: 0 0 .5rem; }
+.week_ai_wrap .week_ai .col img { mix-blend-mode: multiply; }
+@media (max-width: 480px) { .week_ai_wrap .week_ai .col img { width: 100%; } }
+.week_ai_wrap .week_ai .col h3 { color: var(--main_color); padding-top: 1rem; font-size: 1.1rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.week_ai_wrap .week_ai .col h3 span { margin-right: 10px; }
+@media (max-width: 360px) { .week_ai_wrap .week_ai .col h3 { font-size: 1rem; } }
+
+/*# sourceMappingURL=week_ai.css.map */

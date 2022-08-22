@@ -48,7 +48,7 @@
 .carousel { background: transparent; overflow: hidden; position: relative; }
 .carousel .img_02 { display: none; }
 @media (max-width: 480px) { .carousel .img_01 { display: none; }
-  .carousel .img_02 { display: block; position: absolute; left: -110%; -webkit-filter: blur(1px); filter: blur(1px); opacity: .9; } }
+  .carousel .img_02 { display: block; position: absolute; left: -110%; opacity: .9; } }
 @media (max-width: 480px) and (max-width: 440px) { .carousel .img_02 { left: -125%; } }
 @media (max-width: 480px) and (max-width: 375px) { .carousel .img_02 { left: -110%; } }
 @media (max-width: 480px) and (max-width: 360px) { .carousel .img_02 { left: -110%; } }

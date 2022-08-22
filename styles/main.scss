@@ -182,7 +182,7 @@
          display: block;
          position: absolute;
          left: -110%;
-         filter: blur(1px);
+         // filter: blur(1px);
          opacity: .9;
          @media(max-width: 440px) {left: -125%;}
          @media(max-width: 375px) {left: -110%;}

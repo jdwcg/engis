@@ -1,0 +1,36 @@
+.week_ai_wrap {
+
+   .week_ai {
+
+      .week_ai_heading {
+         h1 {}
+      }
+      h2 {
+         font-size: 1.3rem;
+         color: var(--main_color_dark);
+      }
+
+      .col {
+         padding: 0 0 .5rem;
+         img {
+            mix-blend-mode: multiply;
+            @media(max-width: 480px) {
+               width: 100%;
+            }
+
+         }
+
+         h3 {
+            span {margin-right: 10px;}
+            color: var(--main_color);
+            padding-top: 1rem;
+            font-size: 1.1rem;
+            @media(max-width: 360px) {
+               font-size: 1rem;
+            }
+            display: flex;
+            align-items: center;
+         }
+      }
+   }
+}
