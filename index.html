@@ -7,6 +7,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard.css" />
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <meta charset="UTF-8">
@@ -23,7 +24,7 @@
       <div class="side_dot_menu">
          <ul>
             <li class="btnScroll"><a href="javascript:void(0)">Main <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
-            <li class="btnScroll"><a href="javascript:void(0)">NGIS <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+            <li class="btnScroll"><a href="javascript:void(0)">EnGIS <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
             <li class="btnScroll"><a href="javascript:void(0)">Partners <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
          </ul>
       </div>
@@ -61,6 +62,45 @@
 
 <div class="slide_wrapper">
    <section class="lazy slider" data-sizes="50vw">
+      <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">Information System <br>Construction Service</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             정보시스템 구축 서비스<br />
+             <span>공간분석 및 가시화를 위한 공간정보 DB 구축</span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/sys_01.png" alt="crop_01">
+        <img class="img_02" src="./img/sys_02.png" alt="crop_02">
+     </div>
+      <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">Building & Consulting<br> GIS-Based DBs</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             GIS 기반 DB구축 및 컨설팅<br />
+             <span>GIS 시스템을 이용한 공간정보 분석 기법 및 알고리즘 개발</span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/gis_01.png" alt="crop_01">
+        <img class="img_02" src="./img/gis_02.png" alt="crop_02">
+     </div>
+     <div class="carousel">
+        <div class="txt_box">
+           <p class="quote">A.I. based data <br>analysis service</p>
+        </div>
+        <div class="txt_box2">
+           <p class="quote">
+             AI 기반 데이터 분석 서비스<br />
+             <span>A.I.로 분석결과 제공 </span>
+           </p>
+        </div>
+        <img class="img_01" src="./img/trend_01.png" alt="trend_01">
+        <img class="img_02" src="./img/trend_02.png" alt="trend_02">
+     </div>
       <div class="carousel">
         <div class="txt_box">
            <p class="quote">Crop Disease <br>Diagnosis service</p>
@@ -102,19 +142,7 @@
         <img class="img_02" src="./img/finedust_02.png" alt="finedust_02">
      </div>
 
-     <div class="carousel">
-        <div class="txt_box">
-           <p class="quote">A.I. Weekly <br>Trends Report</p>
-        </div>
-        <div class="txt_box2">
-           <p class="quote">
-             주간 A.I. 트렌드 리포트 <br />
-             <span>A.I.로 분석결과 제공 </span>
-           </p>
-        </div>
-        <img class="img_01" src="./img/trend_01.png" alt="trend_01">
-        <img class="img_02" src="./img/trend_02.png" alt="trend_02">
-     </div>
+
    </section>
 </div>
 
@@ -173,13 +201,13 @@
      let yOffset = window.pageYOffset;
      if (matchMedia("screen and (min-width: 1024px)").matches) {
 
-         if(yOffset > 600) {
+         if(yOffset > 300) {
          squiggle1.style.animation = 'draw1 3s linear forwards';
          }
-         if(yOffset > 900) {
+         if(yOffset > 600) {
             squiggle2.style.animation = 'draw2 3s linear forwards';
          }
-         if(yOffset > 1200) {
+         if(yOffset > 900) {
             squiggle3.style.animation = 'draw3 3s linear forwards';
          }
 

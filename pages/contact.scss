@@ -1,5 +1,4 @@
 .contact {
-   width: 895px;
    @media(max-width:480px) {
       width: 80%;
    }
@@ -11,7 +10,44 @@
          flex-direction: column;
       }
       .location_img {
-         width: 548px;
+         border: 1px solid #ccc;
+         padding: 10px;
+         .catch {
+            position: absolute;
+            top: 25%;
+            left: 50%; transform: translateX(-50%);
+            background: white;
+            padding:1rem;
+            border-radius: 10px;
+            background: var(--main_color_dark);
+            color: white;
+            @media(max-width:480px) {top: 15%;}
+            @media(max-width:420px) {top: 10%;}
+            @media(max-width:370px) {top: 8%;}
+            &:after {
+               content: '';
+               position: absolute;
+               top: 100%;
+               left: 50%; transform: translateX(-50%);
+               border-top: 10px solid var(--main_color_dark);
+            	border-left: 10px solid transparent;
+            	border-right: 10px solid transparent;
+            }
+         }
+
+         .closeup_btn {
+            border: 1px solid #ddd;
+            position: absolute;
+            bottom: 10px;
+            background: white;
+            padding: 6px 10px ;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+         }
+         position: relative;
+         width: 680px;
          @media(max-width:480px) {
             width: 100%;
          }
@@ -21,12 +57,24 @@
          .co_info_bar {
             margin-bottom: 14px;
             width: 280px;
+
             @media(max-width: 480px) {
                width: 240px;
             }
+            @media(min-width: 480px) {
+               font-size: 18px;
+               line-height: 1.7;
+            }
             padding: 0 1rem;
             border-left: 4px solid #BEF264;
+            .subject {
+               width: 480px;
+               @media(max-width: 480px) { width: 250px;}
+            }
             .title {
+               @media(min-width: 480px) {
+                  font-size: 1rem;
+               }
                font-size: 14px;
                font-weight: 600;
             }
@@ -51,7 +99,7 @@
 
 .form_wrap {
    background: #E5E7EB;
-   width: 548px;
+   width: 680px;
    padding: 2rem;
    @media(max-width: 480px) {
       width: 100%;
