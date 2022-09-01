@@ -2,10 +2,14 @@
 .partners_bg {
    background: white;
    padding: 2rem 0;
+   
 }
 .partners_title {
    text-align: center;
    font-size: 2rem;
+   @media(max-width:480px) {
+      font-size: 1.4rem;
+   }
    color: #312e81;
 }
 .ngis {
@@ -59,6 +63,7 @@
    @media(max-width:480px) {
       padding: 0 2rem;
       gap: 8px 14px;
+      margin: 2rem 0 0;
    }
    display: flex;
    justify-content: center;

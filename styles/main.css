@@ -2,6 +2,7 @@
 .partners_bg { background: white; padding: 2rem 0; }
 
 .partners_title { text-align: center; font-size: 2rem; color: #312e81; }
+@media (max-width: 480px) { .partners_title { font-size: 1.4rem; } }
 
 .ngis { text-align: center; padding: 2rem 0; }
 .ngis .ngis_sec { margin-top: 2rem; padding: 0 2rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -15,7 +16,7 @@
 .logo_wrap img { height: 60%; opacity: .9; mix-blend-mode: multiply; }
 
 .partners_logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 50px 10px; padding: 1rem 0; margin: 2rem 0; width: 100%; }
-@media (max-width: 480px) { .partners_logo { padding: 0 2rem; gap: 8px 14px; } }
+@media (max-width: 480px) { .partners_logo { padding: 0 2rem; gap: 8px 14px; margin: 2rem 0 0; } }
 .partners_logo .logo_wrap { width: 140px; height: 100px; }
 .partners_logo .logo_wrap img { -o-object-fit: cover; object-fit: cover; }
 @media (max-width: 480px) { .partners_logo .logo_wrap { width: 70px; }
