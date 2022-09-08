@@ -34,7 +34,8 @@
 @media (max-width: 480px) { .mainContain { display: none; } }
 .mainContain .side_dot_menu { position: absolute; top: 50%; left: -68px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 .mainContain .side_dot_menu > ul > li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-.mainContain .side_dot_menu > ul > li:hover a, .mainContain .side_dot_menu > ul > li:hover span { -webkit-transition: all .3s ease; transition: all .3s ease; color: #bfff00; opacity: 1; }
+.mainContain .side_dot_menu > ul > li:first-child > a { color: red; }
+.mainContain .side_dot_menu > ul > li:hover a, .mainContain .side_dot_menu > ul > li:hover span { -webkit-transition: all .3s ease; transition: all .3s ease; opacity: 1; }
 .mainContain .side_dot_menu > ul > li > a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 14px; padding: 12px 0; color: white; -webkit-filter: invert(100%); filter: invert(100%); }
 .mainContain .side_dot_menu > ul > li > a > span { font-size: 12px; }
 

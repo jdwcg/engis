@@ -20,6 +20,7 @@
 @media (max-width: 480px) { .solution .tab_1_desc .view_1_heading p { width: 100%; } }
 @media (max-width: 1200px) { .solution .tab_wrap { display: none; } }
 .solution .tab_wrap .tab_btn { cursor: pointer; width: 250px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; border-left: 6px solid silver; padding: 12px 1rem; margin-bottom: 6px; background: white; }
+.solution .tab_wrap .tab_btn > p a { display: block; }
 .solution .tab_wrap .tab_btn > p a:hover { color: silver; }
 .solution .tab_wrap .tab_btn > p:first-child { padding-right: 1rem; }
 .solution .tab_wrap .tab_btn > p:last-child { color: silver; }

@@ -23,9 +23,9 @@
    <div class="mainContain">
       <div class="side_dot_menu">
          <ul>
-            <li class="btnScroll"><a href="javascript:void(0)">Main <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
-            <li class="btnScroll"><a href="javascript:void(0)">EnGIS <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
-            <li class="btnScroll"><a href="javascript:void(0)">Partners <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+            <li class="btnScroll side_menu1"><a href="javascript:void(0)">Main <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+            <li class="btnScroll side_menu2"><a href="javascript:void(0)">EnGIS <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
+            <li class="btnScroll side_menu3"><a href="javascript:void(0)">Partners <span class="material-icons">&nbsp fiber_manual_record</span></a></li>
          </ul>
       </div>
    </div>
@@ -266,7 +266,6 @@
 <script>
 let btnScroll = document.querySelectorAll('.btnScroll');
 let content1 = document.querySelectorAll('.content1');
-
 function contSlide(num) {
    window.scroll({top:content1[num].offsetTop,  behavior: 'smooth'});
 }
@@ -280,17 +279,44 @@ btnScroll.forEach((item, idx) => {
 </script>
 
 <script>
-let scrollDown = document.querySelector('.scroll_down')
 
-window.addEventListener('scroll', ()=>{
-  let yOffset = window.pageYOffset;
-  if( yOffset > 10) {
-    scrollDown.style.display = 'none';
+   let scrollDown = document.querySelector('.scroll_down')
+   let sideMenu1 = document.querySelector('.side_menu1 a')
+   let sideMenu2 = document.querySelector('.side_menu2 a')
+   let sideMenu3 = document.querySelector('.side_menu3 a')
+   let yOffset = window.pageYOffset;
 
-   } else if( yOffset < 10000) {
 
-     }
+window.addEventListener('scroll', function(){
+   if(window.pageYOffset > 10) {
+      sideMenu1.style.color = "red"
+   }else {
+      sideMenu1.style.color = "red"
+   }
 })
+window.addEventListener('scroll', function(){
+   if(window.pageYOffset > 600) {
+      sideMenu2.style.color = "red"
+      sideMenu1.style.color = "white"
+   } else {
+      sideMenu2.style.color = "white"
+   }
+})
+window.addEventListener('scroll', function(){
+   if(window.pageYOffset > 1200) {
+      sideMenu3.style.color = "red"
+      sideMenu2.style.color = "white"
+   } else {
+      sideMenu3.style.color = "white"
+   }
+})
+
+
+
+
+
+
+
 
 </script>
 
