@@ -29,7 +29,7 @@
 .business_section .row02 .feild_01_desc { position: relative; z-index: 3; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 .business_section .row02 .feild_01_desc .heading { font-size: 18px; font-weight: 600; letter-spacing: -1px; padding: 0 10px; border-left: 4px solid #84CC16; }
 .business_section .row02 .feild_01_desc .desc { width: 400px; font-size: 14px; padding: 1rem 0; }
-.business_section .row02 .feild_01_desc .desc li { list-style: square; margin-left: 1rem; }
+.business_section .row02 .feild_01_desc .desc li { padding: 4px 0; list-style: square; margin-left: 1rem; }
 .business_section .row02 .feild_01_desc .desc li::marker { color: #BEF264; }
 .business_section .row02 .feild_01_desc .heading_btn { background: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; padding-right: 1rem; margin-bottom: 1rem; }
 @media (max-width: 480px) { .business_section .row02 .feild_01_desc .heading_btn { display: none; } }
@@ -46,7 +46,7 @@
 .business_section .row03 .feild_01_desc { position: relative; z-index: 3; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
 .business_section .row03 .feild_01_desc .heading { font-size: 18px; font-weight: 600; letter-spacing: -1px; padding: 0 10px; border-left: 4px solid #84CC16; }
 .business_section .row03 .feild_01_desc .desc { width: 300px; padding: 1rem 0; font-size: 14px; }
-.business_section .row03 .feild_01_desc .desc li { list-style: square; margin-left: 1rem; }
+.business_section .row03 .feild_01_desc .desc li { padding: 4px 0; list-style: square; margin-left: 1rem; }
 .business_section .row03 .feild_01_desc .desc li::marker { color: #BEF264; }
 .business_section .row03 .feild_01_desc .heading_btn { background: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; padding-left: 1rem; margin-bottom: 1rem; }
 @media (max-width: 480px) { .business_section .row03 .feild_01_desc .heading_btn { display: none; } }

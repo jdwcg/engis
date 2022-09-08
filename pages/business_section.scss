@@ -132,6 +132,7 @@
             font-size:  14px;
             padding: 1rem 0;
             li {
+               padding: 4px 0;
                list-style: square;
                margin-left: 1rem;
                &::marker {
@@ -216,6 +217,7 @@
             padding: 1rem 0;
             font-size: 14px;
             li {
+               padding: 4px 0;
                list-style: square;
                margin-left: 1rem;
                &::marker {
