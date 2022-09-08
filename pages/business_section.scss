@@ -1,6 +1,6 @@
 
 .business_section {
-   width: 1010px;
+   width: 1200px;
    padding-bottom: 2rem;
    @media(max-width: 480px) {
       width: 100%; padding: 0 2rem;
@@ -43,12 +43,14 @@
             border-left: 4px solid #84CC16;
          }
          .desc {
-            width: 300px;
+            width: 400px;
             padding: 1rem 0;
             font-size: 14px;
+            word-break: keep-all;
             li {
                list-style: square;
                margin-left: 1rem;
+               padding: 4px 0;
                &::marker {
                   color: #BEF264;
                }
@@ -69,7 +71,7 @@
                justify-content: center;
                span {
                   padding: 20px 10px;
-                  background: #0f172a;
+                  background: #d1d1d1;
                   color: white;
                   height: 100%;
                   font-size: 2rem;
@@ -126,7 +128,7 @@
             border-left: 4px solid #84CC16;
          }
          .desc {
-            width: 300px;
+            width: 400px;
             font-size:  14px;
             padding: 1rem 0;
             li {
@@ -153,7 +155,7 @@
                justify-content: flex-start;
                span {
                   padding: 20px 10px;
-                  background: #0f172a;
+                  background: #d1d1d1;
                   color: white;
                   height: 100%;
                   font-size: 2rem;
@@ -236,7 +238,7 @@
                justify-content: center;
                span {
                   padding: 20px 10px;
-                  background: #0f172a;
+                  background: #d1d1d1;
                   color: white;
                   height: 100%;
                   font-size: 2rem;
